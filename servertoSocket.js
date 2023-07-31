@@ -6,7 +6,7 @@ import { dirname } from "path";
 
 const app = express();
 const httpServer = createServer(app);
-const io = new Server(httpServer);
+const io = new Server(httpServer, { cors: true });
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
