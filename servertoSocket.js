@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express";
 const app = express();
-const http = require("http").createServer(app);
-const io = require("socket.io")(http);
+const http = import("http").createServer(app);
+const io = import("socket.io")(http);
 
 const port = 3000; // Replace with the desired port number
 
